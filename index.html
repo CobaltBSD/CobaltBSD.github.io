@@ -1,1 +1,75 @@
-Placeholder
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Main page - Cobalt</title>
+		<link href="/favicon.ico" rel="icon" crossorigin="anonymous">
+		<link href="/style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="keywords" content="cobalt, linux">
+		<meta name="description" content="Cobalt+Linux website">
+	</head>
+	<body>
+		<div id="header">
+			<div id="tux-icon"><a href="/"><img src="/favicon.ico" alt="Linux penguin"></a></div>
+			<div class="header-item"><a href="/files/">Downloads</a></div>
+			<div class="header-item"><a href="https://github.com/CobaltBSD/src">Contribute</a></div>
+		</div>
+		<h1>This is Cobalt.</h1>
+		<div id="content-intro">
+Cobalt is a practical security-focused desktop operating system based on Linux with an OpenBSD-derived userspace.<br><br>
+
+			<b>Secure and Private</b> — Cobalt takes a radical approach to hardening the system at every level:
+			<ul>
+				<li>Fully static kernel (e.g. no modules).</li>
+				<li>Support for library preloading and custom library paths removed.</li>
+				<li>Hardened memory allocator.</li>
+				<li>Runtime kernel exploit checking.</li>
+				<li>Integrated utilities for purging files and memory.</li>
+			</ul>
+
+			<b>Reasonably Lightweight</b> — Cobalt takes a zero-tolerance approach to bloatware and in-auditable cruft:
+			<ul>
+				<li>Customized NetSurf-based web browser (NeoSurf).</li>
+				<li>Unique core system utilities forked from OpenBSD.</li>
+				<li>No unwanted pre-installed software; Anything that is installed but unused is viewed as a potential security risk.</li>
+				<li>Entirely free of NSA/RedHat components: Cobalt does not include dbus, polkit, logind, systemd init, udev, etc.</li>
+				<li>Binary compression via UPX.</li>
+			</ul>
+
+			<b>Sandboxed</b> — The core of Cobalt's design is to maintain security while allowing more commonplace computer usage to occur via sandboxing:
+			<ul>
+				<li>Compile, clone and distribute isolated containers for your computing.</li>
+				<li>Negligible impact on performance, as opposed to virtualization.</li>
+				<li>Support for running entire sandboxed graphical environments via Waypipe.</li>
+				<li>Cobalt Package Manager supports building sandboxes from source or using pre-built images.</li>
+				<li>Fine-grained control via POSIX capabilities and SMACK mandatory access controls.</li>
+			</ul>
+
+			<b>Built From Source</b> — Unlike most distributions, Cobalt is entirely source-compiled:
+			<ul>
+				<li>Compilation procedures are hard-coded but easily modified so you don't need to lose sleep or hair over obscure compilation issues.</li>
+				<li>Each build system is optimized with documentation, unreliable and time-consuming test suites and static libraries disabled so that you don't need to wait 10 hours for dependencies to compile.</li>
+				<li>Hardware-optimized to guarantee maximum performance.</li>
+				<li>Entirely based on LLVM and musl libc; no gcc, glibc, libgcc_s, binutils, etc.</li>
+			</ul>
+
+			<b>Free, Libre, Open Source and Auditable</b> — Cobalt is entirely free and open source. Furthermore, we guarantee that all code in the core system is auditable. Including auditability in the acronym guarantees that the base system does not include software that is *technically* open source, but either due to feature-creep or the overuse of macros, is absolutely unreadable and therefore cannot reliably be determined to be secure.
+
+			<div id="intro-buttons">
+				<a href="/files" id="downloads-btn">
+					<h3>Get Cobalt</h3>
+					<p>See Downloads</p>
+					<p class="vers-sub">Latest: v1.0</p>
+				</a>
+				<a href="https://github.com/CobaltBSD/src" id="forum-btn">
+					<h3>Get Involved</h3>
+					<p>GitHub</p>
+					<p class="vers-sub">View the source</p>
+				</a>
+			</div>
+			<br><br>
+		</div>
+		<footer id="footer">This site does not track you.</footer>
+	</body>
+</html>
