@@ -22,10 +22,10 @@ Cobalt is a practical security-focused desktop operating system based on Linux w
 			<b>Secure and Private</b> — Cobalt takes a radical approach to hardening the system at every level:
 			<ul>
 				<li>Fully static kernel (e.g. no modules).</li>
-				<li>Support for library preloading and custom library paths via environment variable removed.</li>
+				<li>Support for library preloading and custom library paths outside of ld.so.conf.</li>
 				<li>Hardened memory allocator.</li>
 				<li>Runtime kernel exploit checking.</li>
-				<li>Integrated utilities for purging files and memory.</li>
+				<li>Integrated BSD utility functions and ZXCVBN.</li>
 			</ul>
 
 			<b>Reasonably Lightweight</b> — Cobalt takes a zero-tolerance approach to bloatware and in-auditable cruft:
@@ -33,7 +33,7 @@ Cobalt is a practical security-focused desktop operating system based on Linux w
 				<li>Customized NetSurf-based web browser (NeoSurf).</li>
 				<li>Unique core system utilities forked from OpenBSD.</li>
 				<li>No unwanted pre-installed software; Anything that is installed but unused is viewed as a potential security risk.</li>
-				<li>Entirely free of NSA/RedHat components: Cobalt does not include dbus, polkit, logind, systemd init, udev, etc.</li>
+				<li>Entirely free of FreeDesktop.org mistakes: Cobalt does not include polkit, logind, systemd init or udev.</li>
 				<li>Binary compression via UPX.</li>
 			</ul>
 
@@ -41,20 +41,18 @@ Cobalt is a practical security-focused desktop operating system based on Linux w
 			<ul>
 				<li>Compile, clone and distribute isolated containers for your computing.</li>
 				<li>Negligible impact on performance, as opposed to virtualization.</li>
-				<li>Support for running entire sandboxed graphical environments via Waypipe.</li>
+				<li>Supports lightweight virtualization via User-Mode Linux.</li>
 				<li>Cobalt Package Manager supports building sandboxes from source or using pre-built images.</li>
 				<li>Fine-grained control via POSIX capabilities and SMACK mandatory access controls.</li>
 			</ul>
 
 			<b>Built From Source</b> — Unlike most distributions, Cobalt is entirely source-compiled:
 			<ul>
-				<li>Hard-coded but easily modified compilation procedures so you don't need to lose hair or sleep over obscure issues.</li>
+				<li>Mostly hard-coded but easily modified compilation procedures so you don't need to lose hair or sleep over obscure issues with certain packages.</li>
 				<li>Each build system is optimized with documentation, unreliable and time-consuming test suites and static libraries disabled so that you don't need to wait 10 hours for dependencies to compile.</li>
 				<li>Hardware-optimized to guarantee maximum performance.</li>
-				<li>Entirely based on LLVM and musl libc; no gcc, glibc, libgcc_s, binutils, etc.</li>
+				<li>Based on Openbox with numerous XFCE components</li>
 			</ul>
-
-			<b>Free, Libre, Open Source and Auditable</b> — Cobalt is entirely free and open source. Furthermore, we guarantee that all code in the core system is auditable. Including auditability in the acronym guarantees that the base system does not include software that is *technically* open source, but either due to feature-creep or the overuse of macros, is absolutely unreadable and therefore cannot reliably be determined to be secure.
 
 			<div id="intro-buttons">
 				<a href="/files" id="downloads-btn">
