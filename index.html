@@ -17,41 +17,19 @@
 		</div>
 		<h1>This is Cobalt.</h1>
 		<div id="content-intro">
-Cobalt is a practical security-focused desktop operating system based on Linux with an OpenBSD-derived userspace.<br><br>
-
-			<b>Secure and Private</b> — Cobalt takes a radical approach to hardening the system at every level:
-			<ul>
-				<li>Fully static kernel (e.g. no modules).</li>
-				<li>Support for library preloading and custom library paths outside of ld.so.conf removed.</li>
-				<li>Hardened memory allocator.</li>
-				<li>Runtime kernel exploit checking.</li>
-				<li>Integrated BSD utility functions and ZXCVBN.</li>
-			</ul>
+Cobalt is a practical security-focused desktop operating system forked from OpenBSD.<br><br>
 
 			<b>Reasonably Lightweight</b> — Cobalt takes a zero-tolerance approach to bloatware and in-auditable cruft:
 			<ul>
-				<li>Customized NetSurf-based web browser (NeoSurf).</li>
-				<li>Unique core system utilities forked from OpenBSD.</li>
+				<li>Features a unique NetSurf-based web browser (NeoSurf).</li>
 				<li>No unwanted pre-installed software; Anything that is installed but unused is viewed as a potential security risk.</li>
-				<li>Entirely free of FreeDesktop.org mistakes: Cobalt does not include polkit, logind, systemd init or udev.</li>
-				<li>Binary compression via UPX.</li>
+				<li>Entirely free of FreeDesktop.org and GNOME mistakes: Cobalt does not include polkit, dbus or glib.</li>
 			</ul>
 
-			<b>Sandboxed</b> — Cobalt's sandbox-oriented design allows you to use your computer for common tasks without sacrificing security:
+			<b>Built From Source</b> — Cobalt is also entirely source-compiled:
 			<ul>
-				<li>Compile, clone and distribute isolated containers for your computing.</li>
-				<li>Negligible impact on performance, as opposed to virtualization.</li>
-				<li>Supports lightweight virtualization via User-Mode Linux.</li>
-				<li>Cobalt Package Manager supports building sandboxes from source or using pre-built images.</li>
-				<li>Fine-grained control via POSIX capabilities and SMACK mandatory access controls.</li>
-			</ul>
-
-			<b>Built From Source</b> — Unlike most distributions, Cobalt is entirely source-compiled:
-			<ul>
-				<li>Mostly hard-coded but easily modified compilation procedures so you don't need to lose hair or sleep over obscure issues with certain packages.</li>
-				<li>Each build system is optimized with documentation, unreliable and time-consuming test suites and static libraries disabled so that you don't need to wait 10 hours for dependencies to compile.</li>
-				<li>Hardware-optimized to guarantee maximum performance.</li>
-				<li>Based on Openbox with numerous XFCE components</li>
+				<li>Uses JWM with an Openbox-esque feel</li>
+				<li>Entirely built with TinyCC: Discounting the kernel and C library, the entire system compiles in under 3 minutes on lower-end desktop computers.</li>
 			</ul>
 
 			<div id="intro-buttons">
