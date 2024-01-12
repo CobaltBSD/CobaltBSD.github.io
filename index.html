@@ -21,15 +21,17 @@ Cobalt is a practical security-focused desktop operating system forked from Open
 
 			<b>Reasonably Lightweight</b> — Cobalt takes a zero-tolerance approach to bloatware and in-auditable cruft:
 			<ul>
-				<li>Features a unique NetSurf-based web browser (NeoSurf).</li>
-				<li>No unwanted pre-installed software; Anything that is installed but unused is viewed as a potential security risk.</li>
-				<li>Entirely free of FreeDesktop.org and GNOME mistakes: Cobalt does not include polkit, dbus or glib.</li>
+				<li>Features a unique fork of the NetSurf web browser, instead of a heavyweight such as Chrome or Firefox, or an overly limited text-based browser such as Links or Lynx.</li>
+				<li>Entirely independent from the FreeDesktop.org, GNOME and RedHat ecosystems: Cobalt does not depend on polkit, dbus or glib.</li>
+				<li>100% written in C. In fact, the entire system is configured to be built using TinyCC. C++ is optional, as are any colossal compiler toolchains such as LLVM/Clang or GCC.</li>
 			</ul>
-
-			<b>Built From Source</b> — Cobalt is also entirely source-compiled:
+			
+			<b>Build for the Desktop</b> — ...
 			<ul>
 				<li>Uses JWM with an Openbox-esque feel</li>
-				<li>Entirely built with TinyCC: Discounting the kernel and C library, the entire system compiles in under 3 minutes on lower-end desktop computers.</li>
+				<li>Excellent codec support provided by ffmpeg</li>
+				<li>Extensibility and modification made easy with LuaJIT</li>
+				<li>Supports the HAMMER2 filesystem, adapted from DragonflyBSD. Don't let a sudden power loss ruin your day!</li>
 			</ul>
 
 			<div id="intro-buttons">
